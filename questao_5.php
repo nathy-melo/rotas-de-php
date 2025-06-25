@@ -20,12 +20,12 @@
         } else{
             $pagina = 'home';
         }
-        if($pagina == 'home'){
-            include("home.php");
-        } elseif($pagina == 'sobre'){
-            include("sobre.php");
-        } elseif($pagina == 'contato'){
-            include("contato.php");
+        $caminho = "$pagina.php";
+
+        if(file_exists($caminho)){
+            include $caminho;
+        } else{
+            echo "<h1>página não encontrada</h1>";
         }
     ?>
 </body>

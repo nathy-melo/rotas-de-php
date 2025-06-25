@@ -1,1 +1,0 @@
-<h1>PÁGINA SOBRE</h1>

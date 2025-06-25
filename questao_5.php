@@ -20,13 +20,12 @@
         } else{
             $pagina = 'home';
         }
-
         if($pagina == 'home'){
-            echo "<h1>Página incial</h1>";
+            include("home.php");
         } elseif($pagina == 'sobre'){
-            echo "<h1>Sobre Nós</h1>"; 
+            include("sobre.php");
         } elseif($pagina == 'contato'){
-            echo "<h1>Página De Contato</h1>";
+            include("contato.php");
         }
     ?>
 </body>
